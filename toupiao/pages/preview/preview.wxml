@@ -1,0 +1,29 @@
+<!--pages/preview/preview.wxml-->
+<view class='signUpBox'>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500">    
+        <block wx:for="{{movies}}" wx:for-index="index">    
+          <swiper-item>    
+            <image src="{{item.url}}" class="slide-image"         mode="aspectFill"/>    
+          </swiper-item>    
+        </block>    
+  </swiper>
+  <view class="signUp-main">
+      <view class='signUp-img'>
+        <image src='../../images/signUp-image.png'></image>
+      </view>
+      <text class='signUp-content'>{{text}}</text>
+      <text class='signUp-Name'>{{name}}</text>
+      <text class='signUp-Num'>{{num}}</text>
+      <view class='signUp-success'>
+        <view class='successImmediately'>
+          <text bindtap=''>立即投票</text>
+        </view>
+        <view class='successAgain'>
+          <text bindtap='toSignUp'>重新编辑</text>
+        </view><view class='successSubmit'>
+          <text bindtap=''>提交</text>
+        </view>
+      </view>
+  </view>
+</view>
+

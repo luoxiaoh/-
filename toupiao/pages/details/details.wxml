@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class='warp'>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500">    
+        <block wx:for="{{movies}}" wx:for-index="index">    
+          <swiper-item>    
+            <image src="{{item.url}}" class="slide-image"         mode="aspectFill"/>    
+          </swiper-item>    
+        </block>    
+  </swiper>
+  <view class="details-main">
+    <text class='detailsBoxtitle'>榜单介绍</text>
+    <view class='detailsTitle'>这里是本排行榜的简介文字这里是本排行榜的简介文字这里是本排行榜的简介文字。</view>
+    <image class='detailsIllustration' src='../../images/detailsImg.png'></image>
+    <view class='dl'>
+      <view class='dt'>
+        <image src='../../images/signUp-image.png'></image>
+      </view>
+      <view class='dd'>
+        <text class='ddName'>{{detName}}</text>
+        <text class='ddjianj'>{{detjianj}}</text>
+        <view class='ddBottom'>
+          <view class='clickTou'>投票</view>
+          <view>
+            <text class='ddBottomKing'>{{top}}</text>
+            <text class='kingNum'>{{ddBottomKing}} 票</text>
+          </view>
+        </view>
+      </view>
+      <image src='../../images/one.png' class='dlIcon'></image>
+    </view>
+
+     <view class='dl'>
+      <view class='dt'>
+        <image src='../../images/signUp-image.png'></image>
+      </view>
+      <view class='dd'>
+        <text class='ddName'>{{detName}}</text>
+        <text class='ddjianj'>{{detjianj}}</text>
+        <view class='ddBottom'>
+          <view class='clickTou'>投票</view>
+          <view>
+            <text class='ddBottomKing'>{{top}}</text>
+            <text class='kingNum'>{{ddBottomKing}} 票</text>
+          </view>
+        </view>
+      </view>
+      <image src='../../images/two.png' class='dlIcon'></image>
+    </view>
+
+    <view class='mainBottom'>。。我也是有底线的。。</view>
+  </view>
+</view>
+<view class='details-bottom'>
+      <text class='detailsActivity' bindtap='toSubmission'>查看活动</text>
+      <text class='detailsImmediately' bindtap='toSignUp'>立即报名</text>
+</view>

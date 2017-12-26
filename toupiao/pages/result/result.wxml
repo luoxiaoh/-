@@ -1,0 +1,23 @@
+<!--pages/signUp/signUp.wxml-->
+<view class='signUpBox'>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500">    
+        <block wx:for="{{movies}}" wx:for-index="index">    
+          <swiper-item>    
+            <image src="{{item.url}}" class="slide-image"         mode="aspectFill"/>    
+          </swiper-item>    
+        </block>    
+  </swiper>
+  <view class="signUp-main">
+      <view class='signUp-img'>
+        <image src='../../images/signUp-image.png'></image>
+      </view>
+      <text class='signUp-content'>{{text}}</text>
+      <text class='signUp-Name'>{{name}}</text>
+      <text class='signUp-Num'>{{num}}</text>
+      <view class='signUp-success'>
+        <text>提交成功！
+    请您耐心等待审核结果。</text>
+      </view>
+  </view>
+</view>
+

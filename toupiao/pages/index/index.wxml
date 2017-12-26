@@ -1,0 +1,95 @@
+<!--index.wxml-->
+<view class='warp'>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="500">    
+        <block wx:for="{{movies}}" wx:for-index="index">    
+          <swiper-item>    
+            <image src="{{item.url}}" class="slide-image"         mode="aspectFill"/>    
+          </swiper-item>    
+        </block>    
+  </swiper>
+  <view class="signUp-main">
+    <text class='indexBoxtitle'>优秀投资人榜</text>
+    <view class='indexBox'>
+        <text class='indexBoxtext'>这里写的是本排行榜的简介文字这里写的是本排行榜的简介文字这里写的是本排行榜的简介文字。</text>
+        <view class='dlBox'>
+          <view class='dl'>
+              <view class='dt'>
+                <image src='../../images/signUp-image.png'></image>
+              </view>
+              <view class='dd'>
+                <text>{{ddName}}</text>
+                <text>{{ddNum}} 票</text>
+                <text class='clickTou' bindtap='toDetails'>投票</text>
+              </view>
+              <image src='../../images/one.png' class='dlIcon'></image>
+          </view>
+
+          <view class='dl'>
+              <view class='dt'>
+                <image src='../../images/signUp-image.png'></image>
+              </view>
+              <view class='dd'>
+                <text>{{ddName}}</text>
+                <text>{{ddNum}} 票</text>
+                <text class='clickTou' bindtap='toDetails'>投票</text>
+              </view>
+              <image src='../../images/two.png' class='dlIcon'></image>
+          </view>
+
+          <view class='dl'>
+              <view class='dt'>
+                <image src='../../images/signUp-image.png'></image>
+              </view>
+              <view class='dd'>
+                <text>{{ddName}}</text>
+                <text>{{ddNum}} 票</text>
+                <text class='clickTou' bindtap='toDetails'>投票</text>
+              </view>
+              <image src='../../images/three.png' class='dlIcon'></image>
+          </view>
+        </view>
+    </view>
+
+    <text class='indexBoxtitle' style='margin-top:600rpx'>优秀投资人榜</text>
+    <view class='indexBox'>
+        <text class='indexBoxtext'>这里写的是本排行榜的简介文字这里写的是本排行榜的简介文字这里写的是本排行榜的简介文字。</text>
+        <view class='dlBox'>
+          <view class='dl'>
+              <view class='dt'>
+                <image src='../../images/signUp-image.png'></image>
+              </view>
+              <view class='dd'>
+                <text>{{ddName}}</text>
+                <text>{{ddNum}} 票</text>
+                <text class='clickTou' bindtap='toDetails'>投票</text>
+              </view>
+              <image src='../../images/one.png' class='dlIcon'></image>
+          </view>
+
+          <view class='dl'>
+              <view class='dt'>
+                <image src='../../images/signUp-image.png'></image>
+              </view>
+              <view class='dd'>
+                <text>{{ddName}}</text>
+                <text>{{ddNum}} 票</text>
+                <text class='clickTou' bindtap='toDetails'>投票</text>
+              </view>
+              <image src='../../images/two.png' class='dlIcon'></image>
+          </view>
+
+          <view class='dl'>
+              <view class='dt'>
+                <image src='../../images/signUp-image.png'></image>
+              </view>
+              <view class='dd'>
+                <text>{{ddName}}</text>
+                <text>{{ddNum}} 票</text>
+                <text class='clickTou' bindtap='toDetails'>投票</text>
+              </view>
+              <image src='../../images/three.png' class='dlIcon'></image>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>

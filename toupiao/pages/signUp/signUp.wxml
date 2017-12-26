@@ -1,0 +1,53 @@
+<!--pages/signUp/signUp.wxml-->
+<view class='signUpBox'>
+  <view class='signUpTop'>
+    <view class='signUpSelect'>
+    <text>选择要报名的榜单:</text>
+    <view class='Select'>
+        <text>优秀投资人TOP榜</text>
+        <image src='../../images/arrow.png' class='imageSelect'></image>
+    </view>
+    </view>
+
+    <view class='signUpSelect'>
+      <text>填写申报机构名称:</text>
+      <view class='Select'>
+        <input class="input" name="corporateName" placeholder="某某某科技有限公司"/>
+      </view>
+    </view>
+
+    <view class='signUpSelect'>
+      <text>填写申报机构联系方式:</text>
+      <view class='Select'>
+        <input class="input" name="information" placeholder="填写申报机构联系方式"/>
+      </view>
+    </view>
+
+    <view class='signUpSelect'>
+      <text>填写申报机构简介:</text>
+      <view class='Select'>
+        <textarea placeholder='填写申报机构简介'>
+        </textarea>
+      </view>
+    </view>
+  </view>
+  
+  <view class='signUpBottom'>
+    <view class='signUpSelect'>
+      <text>上传机构LOGO:</text>
+      <view class='Select'  bindtap="chooseimage">
+        <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%;"/>  
+      </view>
+    </view>
+    <view class='signUpBut'>
+      <view class='signUpPreview' bindtap='toPreview'>
+        <text>预览</text>
+      </view>
+      <view class='signUpSubmit' bindtap='toResult'>
+        <text>提交</text>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
